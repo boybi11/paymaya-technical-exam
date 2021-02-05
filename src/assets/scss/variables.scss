@@ -1,0 +1,66 @@
+// Variables will be place here
+
+$dirtyWhite: #F8F8F8;
+$blue: #22afd6;
+$lightBlue: #2BD5FF;
+$pastelBlue: #64c1dd;
+$darkBlue: #2B5059;
+$placeholderBg: #E5E5E5;
+
+$green: #2dcfa6;
+$lGreen: #80E3BE;
+$pastelGreen: #80E3BE;
+$black: #626366;
+$dGray: #1D1D1B;
+$gray: #666;
+$medGray: #5E5E5E;
+$lightGray: #BABABA;
+$xLightGray: #EDEDED;
+$orange: #f5cd5d;
+$pastelOrange: #FFF2D0;
+$pastelOrangeDark: #FBB381;
+$red: #e34040;
+$pastelRed: #FF838C;
+$violet: #D18FC1;
+$yellow: #f5cd5d;
+$lightYellow: #FFF07C;
+$lYellow: #F4EDDD;
+$transition: .6s;
+$transitionFast: .3s;
+$navTopSpacing: 120px;
+$navTopMobileSpacing: 140px;
+$defaultGradient: linear-gradient(90deg, #E85523, #F47A21, #F19F19);
+
+
+// FONT SIZES
+$giantSize: 120px;
+$oversized: 60px;
+$h1: 40px;
+$h2: 35px;
+$small: 12px;
+$medium: 14px;
+$mediumLarge: 16px;
+$large: 18px;
+$xlarge: 22px;
+$xxlarge: 25px;
+
+// FONT FACES
+$primaryFontBlack: 'font-black';
+$primaryFontBlackItalic: 'font-black-italic';
+$primaryFontBold: 'font-bold';
+$primaryFontBoldItalic: 'font-bold-italic';
+$primaryFontExtraBold: 'font-extra-bold';
+$primaryFontExtraLight: 'font-extra-light';
+$primaryFontExtraLightItalic: 'font-extra-light-italic';
+$primaryFontItalic: 'font-italic';
+$primaryFontLight: 'font-light';
+$primaryFontLightItalic: 'font-light-italic';
+$primaryFontRegular: 'font-regular';
+$primaryFontMedium: 'font-medium';
+$primaryFontSemiBold: 'font-semi-bold';
+$primaryFontSemiBoldItalic: 'font-semi-bold-italic';
+//bootstrap variables
+$theme-colors: (
+  "primary": $green,
+  "secondary": $orange
+);

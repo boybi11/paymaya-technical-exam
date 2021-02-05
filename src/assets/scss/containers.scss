@@ -1,0 +1,189 @@
+.relative-container {
+	position: relative;
+}
+
+.sticky-container {
+	position: sticky;
+}
+
+.block-container {
+	display: block;
+}
+
+.border-box-container {
+	box-sizing: border-box;
+}
+
+.absolute {
+
+	&-container {
+		position: absolute;
+	}
+
+	&-cover-container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	&-ur {
+		top: 5px;
+		right: 5px;
+	}
+}
+
+.fixed {
+
+	&-container {
+		position: fixed;
+	}
+
+	&-cover-container {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+}
+
+.top {
+
+	&-0 {
+		top: 0;
+	}
+
+	&-10 {
+		top: 10px;
+	}
+}
+
+.right {
+
+	&-0 {
+		right: 0;
+	}
+
+	&-10 {
+		right: 10px;
+	}
+}
+
+.container {
+	width: 100%;
+	
+	&-300 {
+        max-width: 300px;
+	}
+
+	&-600 {
+        max-width: 600px;
+	}
+	
+    &-1200 {
+        max-width: 1200px;
+    }
+    
+    &-1400 {
+        max-width: 1400px;
+    }
+
+    &-1600 {
+        max-width: 1600px;
+    }
+
+    &-1800 {
+        max-width: 1800px;
+	}
+	
+	&-overflow {
+
+		&-hidden {
+			overflow: hidden;
+		}
+	}
+
+	&-from-redactor {
+
+		img {
+			max-width: 100%;
+		}
+
+		&.txt {
+		
+			&-large {
+				span {
+					font-size: $large !important;
+				}
+			}
+
+			&-medium {
+				span {
+					font-size: $medium !important;
+				}
+		
+				&-large {
+					span {
+						font-size: $mediumLarge !important;
+					}
+				}
+			}
+
+			&-small {
+				span {
+					font-size: $small !important;
+				}
+			}
+
+			&-xsmall {
+				span {
+					font-size: 11px !important;
+				}
+			}
+		
+			@media (max-width: 1240px) {
+				
+				&-large {
+					span {
+						font-size: $medium !important;
+					}
+				}
+
+				&-medium {
+					span {
+						font-size: $small !important;
+					}
+				}
+			}
+		
+			@media (max-width: 767px) {
+		
+				&-medium {
+					span {
+						font-size: $small !important;
+					}
+		
+					&-large {
+						span {
+							font-size: $medium !important;
+						}
+					}
+				}
+		
+				&-large {
+					span {
+						font-size: $medium !important;
+					}
+				}
+		
+				&-small {
+					span {
+						font-size: 10px !important;
+					}
+				}
+			}
+		}
+	}
+}

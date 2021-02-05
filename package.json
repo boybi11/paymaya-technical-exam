@@ -1,0 +1,40 @@
+{
+  "name": "paymaya-technical-exam",
+  "version": "1.0.0",
+  "description": "Paymaya frontend technical exam",
+  "main": "index.js",
+  "scripts": {
+    "start": "set PORT=3005 && react-scripts start",
+    "build": "react-scripts build",
+    "start:api": "json-server --watch data.json --id uuid --port 3001",
+    "dev": "concurrently \"npm start\" \"npm run start:api\""
+  },
+  "author": "John Jaime Oyales",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.2",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "json-server": "^0.16.1",
+    "moment": "^2.29.1",
+    "query-string": "^6.13.8",
+    "react": "^17.0.1",
+    "react-dom": "^16.8.6",
+    "react-draft-wysiwyg": "^1.14.5",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "reactstrap": "^8.0.0",
+    "revalidator": "^0.3.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

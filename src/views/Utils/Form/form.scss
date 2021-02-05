@@ -1,0 +1,150 @@
+::placeholder {
+	color: #aaa !important;
+}
+  
+.form-control {
+	height: auto;
+	padding: 12px 20px;
+	color: $black;
+	display: block;
+	flex: 1;
+	
+    &.form-control-lg {
+        height: calc(1.5em + 1rem + 10px);
+        font-size: 0.875rem;
+        color: $gray;
+	}
+	
+	&.with-bottom-margin {
+		margin-bottom: 20px;
+	}
+
+	&:focus {
+		border-color:#ced4da;
+		box-shadow: none;
+	}
+}
+
+.form-group-container {
+	
+	.form-group {
+		margin-bottom: 0;
+		width: 100%;
+		background: #fff;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		overflow: hidden;
+		box-sizing: border-box;
+
+		.form-control {
+			border: none;	
+			background: transparent;
+			box-shadow: none !important;
+			font-size: $medium;
+		}
+	
+		.control {
+			border: none;
+			background: #fff;
+			color: #ccc;
+			padding: 5px 10px 5px 5px;
+			height: 100%;
+			
+			&.select-down {
+				position: absolute;
+				right: 5px;
+				top: 0;
+				background: #fff;
+				height: 100%;
+			}
+	
+			&:hover {
+				transform: scale(1.2);
+				color: $darkBlue;
+			}
+		}
+		
+		label {
+			font-size: $medium;
+	
+			&.lbl-sm {
+				font-size: $small;
+			}
+		}
+	}
+
+	.error-message {
+		white-space: nowrap;
+		border-radius: 100px;
+		&.grid-column-1-3 {
+			grid-column: 1/3;
+		}
+	}
+
+	&.disabled {
+
+		.form-group {
+			background: #e9ecef;
+			
+			.control {
+				background: #e9ecef;
+			}
+		}
+	}
+
+	&.center-block {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+textarea {
+	
+	&.form-control {
+		border: 1px solid #ccc;
+		background: #fff;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		width: 100%;
+		font-size: $medium;
+		resize: none;
+		outline: none;
+	}
+}
+
+.redactor {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	
+	> * {
+		border: none !important;
+	}
+
+	.redactor-editor {
+		cursor: text;
+		min-height: 300px;
+		padding: 20px;
+		max-height: 500px;
+		overflow: auto;
+	}
+
+	.redactor-toolbar {
+		background: none;
+		
+		.rdw-option-wrapper {
+			border-radius: 5px;
+		}
+	}
+}
+
+	
+@media (max-width: 426px) {
+	.form-group-container {
+		.error-message {
+			&.grid-column-1-3 {
+				grid-column: 1;
+			}
+		}
+	}
+}

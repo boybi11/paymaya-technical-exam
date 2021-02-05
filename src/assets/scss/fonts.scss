@@ -1,0 +1,267 @@
+.txt {
+	// SIZE
+	&-giantsize {
+		font-size: $giantSize;
+	}
+
+	&-oversized {
+		font-size: $oversized;
+	}
+
+	&-header {
+		font-size: $h1;
+
+		&-2 {
+			font-size: $h2;
+		}
+	}
+	&-large {
+		font-size: $large;
+	}
+	&-xlarge {
+		font-size: $xlarge;
+	}
+	&-xxlarge {
+		font-size: $xxlarge;
+	}
+	&-medium {
+		font-size: $medium;
+
+		&-large {
+			font-size: $mediumLarge;
+		}
+	}
+	&-small {
+		font-size: $small !important;
+	}
+	&-xsmall {
+		font-size: 11px;
+	}
+
+
+	// COLOR
+	&-primary {
+		color: $blue !important;
+	}
+
+	&-error {
+		color: $red !important;
+
+		&-pastel {
+			color: $pastelRed !important;
+		}
+	}
+
+	&-success {
+		color: $green !important;
+	}
+
+	&-warning {
+		color: $orange !important;
+	}
+
+	&-yellow {
+		color: $yellow !important;
+	}
+
+	&-l-yellow {
+		color: $lYellow !important;
+	}
+
+	&-gray {
+		color: $gray;
+
+		&-med {
+			color: $medGray;
+		}
+
+		&-light {
+			color: $lightGray;
+		}
+
+		&-dark {
+			color: $dGray;
+		}
+	}
+
+	&-white {
+		color: #fff !important;
+	}
+
+	&-dark {
+		color: $black;
+	}
+
+	&-link {
+		color: #356077;
+	}
+
+	&-dark-link {
+		color: $darkBlue;
+	}
+
+	// WEIGHT
+
+	&-bold {
+		font-weight: bold;
+	}
+
+	//SETTINGS
+
+	&-nowrap {
+		white-space: nowrap;
+	}
+
+	&-ellipsis {
+		text-overflow: ellipsis;
+	}
+
+	&-uppercase {
+		text-transform: uppercase;
+	}
+
+	&-capitalize {
+		text-transform: capitalize;
+	}
+
+	&-underlined {
+		text-decoration: underline;
+	}
+
+	&-strike {
+		text-decoration: line-through;
+
+		&-element {
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 100%;
+				height: 2px;
+				background-color: $black;
+				margin: auto 0;
+			}
+		}
+	}
+
+	&-lineheight-1 {
+		line-height: 1;
+	}
+
+	//ALIGNMENT
+	&-center {
+		text-align: center;
+	}
+
+	&-right {
+		text-align: right;
+	}
+
+	&-justify {
+		text-align: justify;
+	}
+
+	@media (max-width: 1240px) {
+		&-giantsize {
+			font-size: $oversized;
+		}
+		&-oversized {
+			font-size: $h1;
+		}
+		&-header {
+			font-size: $h2;
+	
+			&-2 {
+				font-size: $xxlarge;
+			}
+		}
+		
+		&-large {
+			font-size: $medium;
+		}
+		&-xlarge {
+			font-size: $large;
+		}
+		&-xxlarge {
+			font-size: $xlarge;
+		}
+		&-medium {
+			font-size: $small;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&-giantsize {
+			font-size: $h1;
+		}
+		&-oversized {
+			font-size: $h2;
+		}
+		&-header {
+			font-size: $xxlarge;
+	
+			&-2 {
+				font-size: $xlarge;
+			}
+		}
+
+		&-medium {
+			font-size: $small;
+
+			&-large {
+				font-size: $medium;
+			}
+		}
+
+		&-large {
+			font-size: $medium;
+		}
+
+		&-xlarge {
+			font-size: $medium;
+		}
+
+		&-xxlarge {
+			font-size: $large;
+		}
+
+		&-small {
+			font-size: 10px;
+		}
+	}
+}
+
+.badge {
+	border-radius: 100px;
+	padding: 5px 10px;
+	display: inline-block;
+	
+	&-primary {
+		background: $blue;
+		color: #fff;
+	}
+
+	&-warning {
+		background: $orange;
+		color: #fff;
+	}
+
+	&-success {
+		background: $green;
+		color: #fff;
+	}
+
+	&-error {
+		background: $red;
+		color: #fff;
+	}
+
+	&-white {
+		background: #fff;
+		color: #111 !important;
+	}
+}
